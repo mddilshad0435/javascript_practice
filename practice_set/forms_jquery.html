@@ -61,15 +61,6 @@
 
                 <p>Show the selected options here: <strong id="selected_option"></strong></p>
 
-
-                
-
-                
-
-
-                
-
-
                 
                 <br>
 
@@ -77,15 +68,14 @@
 
                 <form>
 
-                    <input type="radio" name="gender" value="Male" checked> Male<br>
-                    <input type="radio" name="gender" value="Female"> Female<br>
-                    <input type="radio" name="gender" value="I'd rather not inform"> I'd rather not inform
+                    <span><input type="radio" name="gender" value="Male" checked> Male<br></span>
+                    <span><input type="radio" name="gender" value="Female"> Female<br></span>
+                    <span><input type="radio" name="gender" value="I'd rather not inform"> I'd rather not inform</span>
                     
                 </form>
 
                 <br>
 
-                <button id="show_radio">Show</button>
 
                 <p>Show the selected option: <strong id="selected_radio"></strong></p>
 
@@ -102,8 +92,6 @@
                 </form>
 
                 <br>
-
-                <button id="show_check">Show</button>
 
                 <p>
                     Show a list of the selected options: <br>
@@ -123,33 +111,63 @@
 
                 <p>Show the selected options here: <strong id="selected_level"></strong></p>
                 
-                <form>
-                    Select the items for your order: <br>
-                    <input type="checkbox" name="meal" value="Hamburger"> Hamburger<br>
-                    <input type="checkbox" name="meal" value="Fries"> Fries<br>
-                    <input type="checkbox" name="meal" value="Soda"> Soda
-                    
-                </form>
-
-                <br>
-
-                <p>Show the items selected: <strong id="selected_check1"></strong></p>
+                <h5>Challenge</h5>
 
                 <p>
-                    Now let's change the src attribute of an image when clicking a button:
+                    See below an input field with the Id of "fullName". Right next to it there's a hidden button with the Id of "submit".
                 </p>
 
-                <img style="width: 180px; height: auto;" src="https://static.memrise.com/img/400sqf/from/uploads/course_photos/3146044000171223183557.png" alt="js" id="imagem_js">
+                <p>
+                    Show the submit button when some text is written inside the input field. If the text is erased, the button should be hidden again.
+                </p>
 
-                <button id="change_image" style="display: block; margin-top: 12px;">Change image</button>
+                <input id="fullName" type="text" placeholder="Type your name...">
+                
+                &nbsp;&nbsp;
+
+                <button style="display:none" id="submit">Submit</button>
+                <br>
+
+                
+                <h4>hide(), show() and toggle()</h4>
+
+                <p>
+                    Besides the hide() and show() methods, there's also the toggle() method that can be very useful.
+                </p>
+
+                <div class="tabs">
+
+                    <div class="title-area">
+                        <div id="tab-title">Tab title</div>
+                        <div id="toggle-tab"> 
+                           
+                            <svg width="14px" height="9px" viewBox="0 0 14 9" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+                                <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd" stroke-linecap="round" stroke-linejoin="round">
+                                    <g id="Tutorial_800" transform="translate(-392.000000, -1170.000000)" fill-rule="nonzero" stroke="#FFFFFF" stroke-width="2">
+                                        <g id="Group-2" transform="translate(320.000000, 1158.000000)">
+                                            <polyline id="Path-3" points="73 19.2603762 79.1481559 13 85 19.2603762"></polyline>
+                                        </g>
+                                    </g>
+                                </g>
+                            </svg>
+
+                        </div>
+                        
+                    </div>
+
+                    <div id="tab-content">
+                            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut congue metus mi, a sodales elit blandit in. 
+                            Pellentesque mattis sem vitae diam aliquet gravida. Nulla eu elit non lorem faucibus egestas vitae ac tortor.
+                    </div>
+
+
+                </div>
 
                 
 
                 
 
-                
-
-        <script src="js/scripts.js"></script>
+        <script src="js/script_jquery.js"></script>
 
     </body>
 

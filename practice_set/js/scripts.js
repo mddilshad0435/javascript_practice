@@ -53,3 +53,11 @@ for (var a = 0 ; a < check.length ; a++){
         document.getElementById('selected_check1').innerHTML += "</ul>";
     }
 }
+
+//change image by jquery
+
+$('#change_image').click(function(){
+    $('#imagem_js').attr('src','https://i1.sndcdn.com/avatars-bDMse0LK9giPTsoy-YozWGA-t500x500.jpg');
+    $('#change_image').hide();
+});
+
